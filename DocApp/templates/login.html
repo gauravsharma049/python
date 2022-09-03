@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Create a Post </title>
+</head>
+
+<body>
+<h1>Log in to your account </h1>
+{{ userExist }}<br><br>
+<form action="" method="POST">
+{% csrf_token %}
+
+
+Username : <input type="text" required name="Username"><br>
+Password : <input type="password" required name="Password">
+<input type="submit" value="Log In"/>
+</form>
+</body>
+
+</html>
